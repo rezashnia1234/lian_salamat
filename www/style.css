@@ -52,7 +52,7 @@ Template:	Mobix - Mobile Web APP Template
     font-family: "Arabic";
     font-style: normal;
     font-weight: normal;
-    src: url("fonts/cairo.ttf") format("truetype")
+    src: url("fonts/IRANSans.ttf") format("truetype")
 }
 html,
 body {
@@ -62,7 +62,7 @@ width: 100%;
 overflow-x: hidden;
 }
 body {
-font-family: 'Source Sans Pro', sans-serif;
+font-family: Arabic;
 margin: 0;
 padding: 0;
 color: #232323;
@@ -636,8 +636,8 @@ list-style:none;
 }
 .page_content ul.simple_list li{
 margin:0 0 10px 0;
-padding:0 0 0 20px;
-background:url(images/bullet.png) no-repeat left;
+padding:0 20px 0 0;
+background:url(images/bullet.png) no-repeat right;
 }
 
 /* 7-1. PAGES HEADER */
@@ -761,15 +761,16 @@ clear:both;
 ul.features_list li img{
 display:inline-block;
 max-width:10%;
-float:left;
+float:right;
 margin:0px;
+padding-left:8px;			
 }
 ul.features_list li span{
 display:inline-block;
 max-width:90%;
 padding:5px 0 0 5%;
 font-weight:700;
-float:left;
+float:right;
 }
 
 
@@ -1774,13 +1775,15 @@ height:44px;
 line-height:44px;
 font-size:17px;
 cursor:pointer;
+text-align:right;
+direction:rtl;			 		  
 }
 .custom-accordion .accordion-item-toggle:active{
 background:rgba(0,0,0,0.15);
 }
 .custom-accordion .accordion-item-toggle span{
-display:inline-block;
-margin-left:15px;
+
+padding-right:5px;
 }
 .custom-accordion .icon-plus,.custom-accordion .icon-minus{
 display:inline-block;
@@ -1790,6 +1793,7 @@ border:1px solid #000;
 border-radius:100%;
 line-height:20px;
 text-align:center;
+font-family:Source Sans Pro;							
 }
 .custom-accordion .icon-minus{
 display:none;
